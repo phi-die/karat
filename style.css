@@ -1,0 +1,17 @@
+/* Schriften liegen neben der Seite (scripts/web.sh kopiert sie aus assets/fonts), nichts kommt von fremden Servern. */
+@font-face { font-family: "Unbounded"; src: url("fonts/Unbounded-VariableFont.ttf"); font-weight: 200 900; }
+@font-face { font-family: "Bricolage Grotesque"; src: url("fonts/BricolageGrotesque-VariableFont.ttf"); font-weight: 200 800; }
+:root { --velvet: #170B23; --velvet2: #221134; --velvet3: #2E1745; --line: #43275F; --brass: #E2BD78; --brass-hi: #FFF0C8; --ink: #F7EEFC; --dim: #BBA7CF; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; color: var(--ink); font: 17px/1.6 "Bricolage Grotesque", system-ui, sans-serif;
+  background: radial-gradient(ellipse 90% 50% at 50% 0%, #3A1D52 0%, transparent 70%), var(--velvet); }
+main { max-width: 680px; margin: 0 auto; padding: 56px 16px 80px; }
+h1, h2 { font-family: "Unbounded", system-ui, sans-serif; font-weight: 800; line-height: 1.1;
+  background: linear-gradient(var(--brass-hi), var(--brass)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+h1 { font-size: 46px; margin: 0 0 20px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 40px 0 8px; }
+p { color: var(--dim); }
+strong { color: var(--ink); }
+a { color: var(--brass); }
+.card { background: linear-gradient(var(--velvet3), var(--velvet2)); border: 1px solid rgba(226, 189, 120, 0.35); border-radius: 20px; padding: 4px 20px; }
+.foot { margin-top: 48px; font-size: 15px; }
